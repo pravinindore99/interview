@@ -30,7 +30,6 @@ public class TopRowHourCalculatorTest {
         Assertions.assertThat(topRowHourCalculator.convertValue().toString()).isEqualTo("OOOO"+ IBaseCalculator.newLine);
     }
 
-
     @Test
     public void testShouldAttachNewLine(){
         TopRowHourCalculator topRowHourCalculator = new TopRowHourCalculator(LightColor.RED, CellCountInRow.TOP_HOUR_CELL_COUNT,"00");

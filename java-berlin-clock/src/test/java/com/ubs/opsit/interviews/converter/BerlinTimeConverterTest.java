@@ -49,5 +49,7 @@ public class BerlinTimeConverterTest {
         IConverterChain chainForBottomMinuteHourCalculation =chainForTopMinuteHourCalculation.getNextConverterChain();
         Assert.assertTrue(chainForBottomMinuteHourCalculation.getBaseCalculator() instanceof BottomRowMinuteCalculator);
 
+        Assertions.assertThat(chainForBottomMinuteHourCalculation.getNextConverterChain()).isNull();
+
     }
 }
