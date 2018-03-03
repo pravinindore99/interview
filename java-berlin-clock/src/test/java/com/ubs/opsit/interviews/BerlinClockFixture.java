@@ -16,6 +16,10 @@ public class BerlinClockFixture {
     private TimeConverter berlinClock;
     private String theTime;
 
+    public BerlinClockFixture(){
+        this.berlinClock =new BerlinTimeConverter();
+    }
+
     @Test
     public void berlinClockAcceptanceTests() throws Exception {
         aBehaviouralTestRunner()
